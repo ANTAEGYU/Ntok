@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00695c</color>
+    <color name="colorPrimaryDark">#5000695c</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="appTheme">#00695c</color>
+    <color name="light_black">#4a4a4a</color>
+    <color name="light_blackk">#7c4a4a4a</color>
+    <color name="appTheme_ripple">#d8dada</color>
+    <color name="appTheme_light">#5000695c</color>
+    <color name="grey_200">#EEEEEE</color>
+    <color name="grey_500">#a4a4a4</color>
+    <color name="grey_100">#F5F5F5</color>
+    <color name="grey_800">#212121</color>
+
+    <color name="black">#000000</color>
+    <color name="dark_gray">#6c6c6c</color>
+    <color name="grey">#d3d3d3</color>
+    <color name="white">#ffffff</color>
+    <color name="blue">#007FFF</color>
+    <color name="receview_color">#ccff90</color>
+    <color name="backgroud">#f2f2f2</color>
+    <color name="red">#FF201E</color>
+
+
+    <color name="settings_frame_background_color">#F7F8F7</color>
+    <color name="text_color_link">@color/blue</color>
+    <color name="text_color_link_preview_title">@color/blue</color>
+    <color name="text_color_link_preview_description">#333333</color>
+    <color name="settings_background_color_primary">#C8C8C8</color>
+    <color name="country_name_test_color">#64646E</color>
+
+
+    <color name="light_transparent_black_photo_view">#45000000</color>
+    <color name="transparent_white">#A6ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="row_selection_color">#9CCBCF</color>
+
+
+    <!-- Screens background color-->
+    <color name="bg_screen1">#f64c73</color>
+    <color name="bg_screen2">#20d2bb</color>
+    <color name="bg_screen3">#3395ff</color>
+    <color name="bg_screen4">#c873f4</color>
+    <color name="bg_screen5">#f64c73</color>
+    <color name="bg_screen6">#20d2bb</color>
+    <color name="bg_screen7">#3395ff</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#d1395c</color>
+    <color name="dot_dark_screen2">#14a895</color>
+    <color name="dot_dark_screen3">#2278d4</color>
+    <color name="dot_dark_screen4">#a854d4</color>
+    <color name="dot_dark_screen5">#d1395c</color>
+    <color name="dot_dark_screen6">#14a895</color>
+    <color name="dot_dark_screen7">#2278d4</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#f98da5</color>
+    <color name="dot_light_screen2">#8cf9eb</color>
+    <color name="dot_light_screen3">#93c6fd</color>
+    <color name="dot_light_screen4">#e4b5fc</color>
+    <color name="dot_light_screen5">#f98da5</color>
+    <color name="dot_light_screen6">#8cf9eb</color>
+    <color name="dot_light_screen7">#93c6fd</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+        <item>@color/dot_light_screen5</item>
+        <item>@color/dot_light_screen6</item>
+        <item>@color/dot_light_screen7</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+        <item>@color/dot_dark_screen5</item>
+        <item>@color/dot_dark_screen6</item>
+        <item>@color/dot_dark_screen7</item>
+    </array>
+
+</resources>

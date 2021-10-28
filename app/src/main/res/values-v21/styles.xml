@@ -1,0 +1,26 @@
+<resources>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="MyAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">#ffffff</item>
+        <item name="colorControlNormal">#ffffff</item>
+        <item name="colorControlActivated">#ffffff</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/appTheme</item>
+        <item name="android:popupMenuStyle">@style/AndroidSRC.PopupMenu</item>
+        <item name="android:itemTextAppearance">@style/AndroidSRC.TextAppearance</item>
+
+    </style>
+
+</resources>

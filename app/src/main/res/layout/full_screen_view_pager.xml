@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ntok.chatmodule.media.zoomEnabledGallery.GalleryViewPager
+        android:id="@+id/view_pager_full_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomText"
+        android:background="@color/transparent">
+        
+    </com.ntok.chatmodule.media.zoomEnabledGallery.GalleryViewPager>
+    >
+
+    <include
+        android:id="@+id/left_arrow_images"
+        layout="@layout/left_arrow_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <!--<include-->
+        <!--android:id="@+id/right_arrow_images"-->
+        <!--layout="@layout/right_arrow_layout"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:visibility="gone"-->
+        <!--tools:visibility="visible" />-->
+
+    <TextView
+        android:id="@+id/bottomText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:fadeScrollbars="true"
+        android:padding="@dimen/_5sdp"
+        android:scrollIndicators="right"
+        android:scrollbars="vertical"
+        android:textColor="@color/black" />
+
+    <!--<ImageView-->
+        <!--android:id="@+id/close"-->
+        <!--android:layout_width="@dimen/_34sdp"-->
+        <!--android:layout_height="@dimen/_34sdp"-->
+        <!--android:layout_margin="@dimen/_7sdp"-->
+        <!--android:background="@drawable/circle_transparent_black_light"-->
+        <!--android:padding="@dimen/_8sdp"-->
+        <!--android:src="@drawable/close_white_lines" />-->
+
+    <TextView
+        android:id="@+id/page_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:gravity="center"
+        android:padding="@dimen/_15sdp"
+        android:textColor="@color/dark_gray"
+        android:visibility="gone"
+        tools:text="1/1"
+        tools:visibility="visible" />
+
+</RelativeLayout>

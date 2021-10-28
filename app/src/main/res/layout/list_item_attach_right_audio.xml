@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/msg_widget_attach_audio_right"
+    style="@style/ListItemAudioMessage.Right">
+
+    <RelativeLayout
+        android:id="@+id/msg_bubble_background"
+        style="@style/BubbleAttachAudioFrame.Right">
+
+        <com.ntok.chatmodule.media.view.QBPlaybackControlView
+            android:id="@+id/msg_audio_attach"
+            style="@style/AudioViewAttach.Right" />
+
+        <include layout="@layout/widget_item_attach_right"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <!--<com.ntok.chatmodule.utils.CircleImageView-->
+        <!--android:id="@+id/msg_image_avatar"-->
+        <!--style="@style/AvatarImageViewStyle.Right" />-->
+</LinearLayout>

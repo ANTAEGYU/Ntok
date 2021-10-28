@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/activity_welcome">
+
+
+    <com.ntok.chatmodule.view.NonSwipeableViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/btn_nextll"
+        android:alpha=".5"
+        android:background="@android:color/white" />
+
+    <LinearLayout
+        android:id="@+id/btn_nextll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/next"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

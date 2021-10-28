@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingEnd="@dimen/_20sdp">
+
+                <ImageView
+                    android:id="@+id/icon_group"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:gravity="center"
+                    android:src="@drawable/default_user_black" />
+
+                <EditText
+                    android:id="@+id/editGroupName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_weight="3"
+                    android:hint="@string/enter_group_name"
+                    android:inputType="textCapWords"
+                    android:maxLength="20"
+                    android:paddingLeft="@dimen/_20sdp"
+                    android:paddingBottom="@dimen/_20sdp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_200" />
+
+            <TextView
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/members"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycleListFriend"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_50sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp" />
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/grey_500"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/_20sdp">
+
+
+        <Button
+            android:id="@+id/createGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:text="Create group"
+            android:textSize="@dimen/_12sdp"
+            android:background="@drawable/disable_button"
+            android:drawableLeft="@drawable/ic_add_group_disable"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+</RelativeLayout>

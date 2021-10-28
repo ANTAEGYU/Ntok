@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ib_password_element"
+    android:layout_width="@dimen/_35sdp"
+    android:layout_height="@dimen/_35sdp"
+    android:layout_margin="@dimen/_3sdp" >
+
+    <com.ntok.chatmodule.backspaceEditText.BackpressDetectEditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:inputType="textPassword"
+        android:textStyle="bold"
+        android:maxLength="1"
+        android:textColor="@color/appTheme"
+        android:textSize="10sp" />
+
+
+</RelativeLayout>

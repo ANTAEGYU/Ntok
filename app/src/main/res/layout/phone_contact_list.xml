@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/_16sdp"
+    android:paddingTop="@dimen/_16sdp">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list"
+        android:paddingLeft="@dimen/_16sdp"
+        android:paddingRight="@dimen/_16sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:background="@color/appTheme"
+        android:text="Send"
+        android:visibility="gone"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+</RelativeLayout>

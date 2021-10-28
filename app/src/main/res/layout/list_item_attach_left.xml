@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/msg_widget_attach_left"
+    style="@style/ListItemAttachMessage.Left">
+
+
+    <!--<com.ntok.chatmodule.utils.CircleImageView-->
+        <!--android:id="@+id/msg_image_avatar"-->
+        <!--style="@style/AvatarImageViewStyle.Left" />-->
+
+    <RelativeLayout
+        android:id="@+id/msg_bubble_background"
+        style="@style/BubbleAttachFrame.Left">
+
+        <ProgressBar
+            android:id="@+id/msg_progressbar_attach"
+            style="@style/ProgressBarAttach.Left" />
+
+        <ImageView
+            android:id="@+id/msg_image_attach"
+            style="@style/ImageViewAttach.Left" />
+        <include layout="@layout/widget_item_attach_left"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_alignParentBottom="true"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

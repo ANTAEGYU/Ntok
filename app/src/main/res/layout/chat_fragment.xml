@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10sdp" />
+
+    <com.ntok.chatmodule.utils.CustomRecyclerView
+        android:id="@+id/recyclerChat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_bar">
+
+
+    </com.ntok.chatmodule.utils.CustomRecyclerView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/layout_attach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_bar"
+        android:layout_margin="@dimen/_10sdp"
+        android:clickable="false"
+        android:gravity="center"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_10sdp"
+        app:cardBackgroundColor="@color/backgroud">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/llImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.ntok.chatmodule.utils.CircleImageView
+                        android:id="@+id/attach_image"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:src="@drawable/ic_image_send"  />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="Image"
+                        android:textColor="@color/appTheme" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llShareLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:orientation="vertical">
+
+                    <com.ntok.chatmodule.utils.CircleImageView
+                        android:id="@+id/attach_location"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:src="@drawable/ic_share_location" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="Location"
+                        android:textColor="@color/appTheme" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llShareContact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.ntok.chatmodule.utils.CircleImageView
+                        android:id="@+id/attach_contact"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:src="@drawable/ic_share_contact" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="Contact"
+                        android:textColor="@color/appTheme" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/llShareAudio"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.ntok.chatmodule.utils.CircleImageView
+                        android:id="@+id/attach_audio"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:src="@drawable/ic_share_audiotrack" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="Audio"
+                        android:textColor="@color/appTheme" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llShareVideo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.ntok.chatmodule.utils.CircleImageView
+                        android:id="@+id/attach_video"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:src="@drawable/ic_share_video" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="Video"
+                        android:textColor="@color/appTheme" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llShareCameraImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:orientation="vertical">
+
+                    <com.ntok.chatmodule.utils.CircleImageView
+                        android:id="@+id/attach_camera"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:src="@drawable/ic_share_camera" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="Camera"
+                        android:textColor="@color/appTheme" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_margin="@dimen/_10sdp"
+
+        android:layout_alignParentBottom="true">
+        <com.ntok.chatmodule.utils.CircleImageView
+            android:id="@+id/btnSend"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="@dimen/_5sdp"
+            app:civ_fill_color="@color/appTheme"
+            android:src="@drawable/ic_send" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/btnSend"
+            android:background="@drawable/edittext_boder"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnAttach"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:background="#80FFFFFF"
+                android:scaleType="centerInside"
+                android:src="@drawable/attach_file_black" />
+
+
+            <EditText
+                android:id="@+id/editWriteMessage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="Type Message"
+                android:inputType="textLongMessage"
+                android:maxLines="1"
+                android:imeOptions="actionDone"
+                android:paddingLeft="@dimen/_7sdp"
+                android:paddingRight="@dimen/_7sdp"
+                android:textColorHint="#aeafaf"
+                android:textSize="@dimen/_13sdp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

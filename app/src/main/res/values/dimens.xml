@@ -1,0 +1,65 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    <dimen name="password_item_lateral_margin">10dp</dimen>
+    <dimen name="password_item_height">38dp</dimen>
+    <dimen name="password_item_width">38dp</dimen>
+
+
+    <dimen name="padding_common">8dp</dimen>
+
+    <dimen name="chat_attach_width">200dp</dimen>
+    <dimen name="chat_attach_height">200dp</dimen>
+    <dimen name="chat_babble_margin">4dp</dimen>
+
+    <dimen name="chat_attach_audio_height">82dp</dimen>
+
+    <dimen name="padding_small">4dp</dimen>
+    <dimen name="padding_medium">@dimen/padding_common</dimen>
+    <dimen name="padding_big">16dp</dimen>
+
+    <dimen name="text_size_link_preview_title">14sp</dimen>
+    <dimen name="text_size_link_preview_description">12sp</dimen>
+    <dimen name="text_size_link_preview_host">12sp</dimen>
+
+    <dimen name="attach_image_width_preview">200dp</dimen>
+    <dimen name="attach_image_height_preview">200dp</dimen>
+
+    <dimen name="icon_play_width">42dp</dimen>
+    <dimen name="icon_play_height">48dp</dimen>
+
+    <dimen name="corners_small_value">3dp</dimen>
+    <dimen name="image_view_small_avatar_layout_width">48dp</dimen>
+    <dimen name="avatar_border_width">1dp</dimen>
+
+    <dimen name="host_icon_width">12dp</dimen>
+    <dimen name="host_icon_height">12dp</dimen>
+
+    <dimen name="link_preview_width">240dp</dimen>
+    <dimen name="link_preview_imaga_min_height">120dp</dimen>
+
+    <!-- Text sizes -->
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_normal">13sp</dimen>
+    <dimen name="text_size_medium">15sp</dimen>
+
+
+
+    <dimen name="header_view_start_margin_left">16dp</dimen>
+    <dimen name="header_view_end_margin_left">40dp</dimen>
+    <dimen name="header_view_end_margin_right">14dp</dimen>
+    <dimen name="header_view_start_margin_bottom">14dp</dimen>
+    <dimen name="header_view_start_text_size">25sp</dimen>
+    <dimen name="header_view_end_text_size">18sp</dimen>
+    <dimen name="dots_height">30dp</dimen>
+    <dimen name="dots_margin_bottom">20dp</dimen>
+    <dimen name="img_width_height">120dp</dimen>
+    <dimen name="slide_title">30dp</dimen>
+    <dimen name="slide_desc">16dp</dimen>
+    <dimen name="desc_padding">40dp</dimen>
+
+</resources>

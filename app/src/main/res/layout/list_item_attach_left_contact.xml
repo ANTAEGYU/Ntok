@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/msg_widget_attach_audio_left"
+    style="@style/ListItemAudioMessage.Left">
+
+    <!--<com.ntok.chatmodule.utils.CircleImageView-->
+        <!--android:id="@+id/msg_image_avatar"-->
+        <!--style="@style/AvatarImageViewStyle.Left" />-->
+
+    <RelativeLayout
+        android:id="@+id/msg_bubble_background"
+        style="@style/BubbleAttachAudioFrame.Left">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.ntok.chatmodule.utils.CircleImageView
+                android:id="@+id/user_image"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:src="@drawable/user_default" />
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:text="user_name" />
+        </LinearLayout>
+
+        <include layout="@layout/widget_item_attach_left"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

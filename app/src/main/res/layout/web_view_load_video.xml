@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_usr_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/download_video"
+            android:orientation="horizontal"
+            tools:ignore="UnknownId">
+            <!--android:ellipsize = "marquee"-->
+            <!--android:ems = "1"-->
+
+
+            <ImageView
+                android:id="@+id/user_image"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:background="@drawable/image_rectangle"
+                android:padding="@dimen/_3sdp"
+                android:scaleType="centerCrop"
+                android:src="@color/black" />
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/auto_scrollable_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="Harry Potter "
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/status_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_usr_info"
+        android:layout_marginBottom="@dimen/_19sdp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:scrollbars="horizontal"
+        android:text="hiiiii"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <WebView
+        android:id="@+id/webview_sin"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/status_textView" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/status_textView"
+        android:layout_centerInParent="true">
+
+        <VideoView
+            android:id="@+id/videoView_sin"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/videoViewWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+        </FrameLayout>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar_sin"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

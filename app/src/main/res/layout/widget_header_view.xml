@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ntok.chatmodule.view.HeaderView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:visibility="gone"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/back_button"/>
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_gravity="center_vertical"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/last_seen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:visibility="gone"
+        android:textColor="@android:color/white" />
+
+
+</com.ntok.chatmodule.view.HeaderView>
